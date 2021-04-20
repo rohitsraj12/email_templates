@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
         $ref_phone = $clients->phone;
 
         $to         = $clients->email;
-        $subject    = "Refer and Earn | Gopalan Residensial Projects";
+        $subject    = "Gopalan Ugadi Habba | Gopalan Residensial Projects";
         $message    = '
                         <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f7f7f7">
                             <tr>
@@ -62,15 +62,15 @@ if (isset($_POST['submit'])) {
                                                     <tr>
                                                         <td class="text-nav-white" bgcolor="#e85711"style="color:#ffffff; font-family:\'Roboto\', Arial, sans-serif; font-size:12px; line-height:22px; text-align:center; text-transform:uppercase; padding:12px 0px;">
                                                             <div mc:edit="text_2">
-                                                                <a href="'.  $aqua  . '?id=' . $to . "&name=" . $ref_name . "&phone" . $ref_phone . '" target="_blank" class="link-white"style="color:#ffffff; text-decoration:none;"><span class="link-white"style="color:#ffffff; text-decoration:none;">Aqua</span></a>
+                                                                <a href="'.  $aqua  . '?id=' . $to . "&name=" . $ref_name . "&phone=" . $ref_phone . '" target="_blank" class="link-white"style="color:#ffffff; text-decoration:none;"><span class="link-white"style="color:#ffffff; text-decoration:none;">Aqua</span></a>
                                                                 &nbsp; &nbsp; &nbsp;<span class="m-hide"> &nbsp; &nbsp; </span>
-                                                                <a href="'. $lakefront . '?id=' . $to . "&name=" . $ref_name . "&phone" . $ref_phone . '" target="_blank" class="link-white"style="color:#ffffff; text-decoration:none;"><span class="link-white"style="color:#ffffff; text-decoration:none;">Lakefront</span></a>
+                                                                <a href="'. $lakefront . '?id=' . $to . "&name=" . $ref_name . "&phone=" . $ref_phone . '" target="_blank" class="link-white"style="color:#ffffff; text-decoration:none;"><span class="link-white"style="color:#ffffff; text-decoration:none;">Lakefront</span></a>
                                                                 &nbsp; &nbsp; &nbsp;<span class="m-hide"> &nbsp; &nbsp; </span>
-                                                                <a href="'. $florenza . '?id=' . $to . "&name=" . $ref_name . "&phone" . $ref_phone . '" target="_blank" class="link-white"style="color:#ffffff; text-decoration:none;"><span class="link-white"style="color:#ffffff; text-decoration:none;">Florenza</span></a>
+                                                                <a href="'. $florenza . '?id=' . $to . "&name=" . $ref_name . "&phone=" . $ref_phone . '" target="_blank" class="link-white"style="color:#ffffff; text-decoration:none;"><span class="link-white"style="color:#ffffff; text-decoration:none;">Florenza</span></a>
                                                                 <span class="m-block"><span class="m-hide">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span>
-                                                                <a href="'. $olympia . '?id=' . $to . "&name=" . $ref_name . "&phone" . $ref_phone . '" target="_blank" class="link-white"style="color:#ffffff; text-decoration:none;"><span class="link-white"style="color:#ffffff; text-decoration:none;">Olympia</span></a>
+                                                                <a href="'. $olympia . '?id=' . $to . "&name=" . $ref_name . "&phone=" . $ref_phone . '" target="_blank" class="link-white"style="color:#ffffff; text-decoration:none;"><span class="link-white"style="color:#ffffff; text-decoration:none;">Olympia</span></a>
                                                                 &nbsp; &nbsp; &nbsp;<span class="m-hide"> &nbsp; &nbsp; </span>
-                                                                <a href="'. $sanskriti . '?id=' . $to . "&name=" . $ref_name . "&phone" . $ref_phone . '" target="_blank" class="link-white"style="color:#ffffff; text-decoration:none;"><span class="link-white"style="color:#ffffff; text-decoration:none;">sanskriti</span></a>
+                                                                <a href="'. $sanskriti . '?id=' . $to . "&name=" . $ref_name . "&phone=" . $ref_phone . '" target="_blank" class="link-white"style="color:#ffffff; text-decoration:none;"><span class="link-white"style="color:#ffffff; text-decoration:none;">sanskriti</span></a>
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -83,26 +83,29 @@ if (isset($_POST['submit'])) {
                                                 <div mc:repeatable="Select" mc:variant="Section 1">
                                                     <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ebebeb">
                                                         <tr>
-                                                            <td class="fluid-img"style="font-size:0pt; line-height:0pt; text-align:left;"><img src="images/banner/banner.jpg" width="650" height="358" mc:edit="image_7" style="max-width:650px;" border="0" alt="" /></td>
+                                                            <td class="fluid-img"style="font-size:0pt; line-height:0pt; text-align:left;"><img src="' . $base_url . 'images/banner/banner.jpg" width="650" height="358" mc:edit="image_7" style="max-width:650px;" border="0" alt="" /></td>
                                                         </tr>
                                                         <tr>
                                                             <td class="p30-15-0" style="padding: 50px 30px 0px;" bgcolor="#ffffff">
                                                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                                     <tr>
-                                                                        <td class="h5-center"style="color:#a1a1a1; font-family:\'Raleway\', Arial,sans-serif; font-size:16px; line-height:22px; text-align:left; padding-bottom:5px;"><div mc:edit="text_3">Dear ' . $ref_name .'</div></td>
+                                                                        <td class="h5-center"style="color:#a1a1a1; font-family:\'Raleway\', Arial,sans-serif; font-size:16px; line-height:22px; text-align:left; padding-bottom:5px;"><div mc:edit="text_3" style="color: #000000">Dear ' . $ref_name . ',</div></td>
                                                                     </tr>
-                                                                    <!-- <tr>
-                                                                        <td class="h2-center"style="color:#000000; font-family:\'Playfair Display\', Times, \'Times New Roman\', serif; font-size:32px; line-height:36px; text-align:center; padding-bottom:20px;"><div mc:edit="text_4">Darure Reprehenderit Velit!</div></td>
-                                                                    </tr> -->
                                                                     <tr>
-                                                                        <td class="text-left"style="color:#5d5c5c; font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:22px; text-align:left; padding-bottom:22px;"><div mc:edit="text_5">
-                                                                            <ul style="list-style: none; margin: 0; padding: 0;">
-                                                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi?</li>
-                                                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                                                                                <li>Lorem ipsum dolor sit.</li>
-                                                                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, consequuntur.</li>
-                                                                            </ul>
-                                                                        </div></td>
+                                                                        <td class="text-center"style="color:#5d5c5c; font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:22px; text-align:center; padding-top:5px;"><div mc:edit="text_5">
+                                                                            <h5 style="font-size:30px; color:#000000">
+                                                                                Refer and Earn
+                                                                            </h5>
+                                                                            <div style="list-style: none; margin: 0; padding:5px 0; ">
+                                                                                <p style="font-size:17px; color:#222222">
+                                                                                    Located in Mylasandra, Off Mysore Road, Gopalan Sanskriti offers 2 & 3 BHK homes that are a perfect combination of luxury and comfort. With a well-equipped clubhouse and vast open spaces, these stunning homes take care of your needs and give you the comfort you deserve.
+                                                                                </p>
+                                                                                <h6 style="padding-top:5px; color:#222222;font-weight:500; font-size: 24px;">
+                                                                                    Homes starting at 73.79 Lacs
+                                                                                </h6>
+                                                                            </div>
+                                                                        </td>
+                                                       
                                                                     </tr>
                                                                 </table>
                                                             </td>
@@ -159,7 +162,7 @@ if (isset($_POST['submit'])) {
                                                                                                                         </td>
                                                                                                                     </tr>
                                                                                                                     <tr>
-                                                                                                                        <td style="font-family:\'Kreon\', Georgia, serif; font-size:14px; line-height:18px; text-align:center; padding:10px 30px; border-radius:20px; background:transparent; color:#e85711; border:1px solid #e85711; display: inline-block;"><div mc:edit="text_12"><a href="'.  $aqua  . '?id=' . $to . "&name=" . $ref_name . "&phone" . $ref_phone . '" target="_blank" class="link-blue"style="color:#e85711; text-decoration:none;"><span class="link-blue"style="color:#e85711; text-decoration:none;">read more</span></a></div></td>
+                                                                                                                        <td style="font-family:\'Kreon\', Georgia, serif; font-size:14px; line-height:18px; text-align:center; padding:10px 30px; border-radius:20px; background:transparent; color:#e85711; border:1px solid #e85711; display: inline-block;"><div mc:edit="text_12"><a href="'.  $aqua  . '?id=' . $to . "&name=" . $ref_name . "&phone=" . $ref_phone . '" target="_blank" class="link-blue"style="color:#e85711; text-decoration:none;"><span class="link-blue"style="color:#e85711; text-decoration:none;">read more</span></a></div></td>
                                                                                                                     </tr>
                                                                                                                 </table>
                                                                                                             </th>
@@ -196,7 +199,7 @@ if (isset($_POST['submit'])) {
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                     <tr>
-                                                                                                                        <td style="font-family:\'Kreon\', Georgia, serif; font-size:14px; line-height:18px; text-align:center; padding:10px 30px; border-radius:20px; background:transparent; color:#e85711; border:1px solid #e85711; display: inline-block;"><div mc:edit="text_12"><a href="'.  $lakefront  . '?id=' . $to . "&name=" . $ref_name . "&phone" . $ref_phone . '" target="_blank" class="link-blue"style="color:#e85711; text-decoration:none;"><span class="link-blue"style="color:#e85711; text-decoration:none;">read more</span></a></div></td>
+                                                                                                                        <td style="font-family:\'Kreon\', Georgia, serif; font-size:14px; line-height:18px; text-align:center; padding:10px 30px; border-radius:20px; background:transparent; color:#e85711; border:1px solid #e85711; display: inline-block;"><div mc:edit="text_12"><a href="'.  $lakefront  . '?id=' . $to . "&name=" . $ref_name . "&phone=" . $ref_phone . '" target="_blank" class="link-blue"style="color:#e85711; text-decoration:none;"><span class="link-blue"style="color:#e85711; text-decoration:none;">read more</span></a></div></td>
                                                                                                                     </tr>
                                                                                                                 </table>
                                                                                                             </th>
@@ -254,7 +257,7 @@ if (isset($_POST['submit'])) {
                                                                                                                         </td>
                                                                                                                     </tr>
                                                                                                                     <tr>
-                                                                                                                        <td style="font-family:\'Kreon\', Georgia, serif; font-size:14px; line-height:18px; text-align:center; padding:10px 30px; border-radius:20px; background:transparent; color:#e85711; border:1px solid #e85711; display: inline-block;"><div mc:edit="text_12"><a href="'.  $florenza  . '?id=' . $to . "&name=" . $ref_name . "&phone" . $ref_phone . '" target="_blank" class="link-blue"style="color:#e85711; text-decoration:none;"><span class="link-blue"style="color:#e85711; text-decoration:none;">read more</span></a></div></td>
+                                                                                                                        <td style="font-family:\'Kreon\', Georgia, serif; font-size:14px; line-height:18px; text-align:center; padding:10px 30px; border-radius:20px; background:transparent; color:#e85711; border:1px solid #e85711; display: inline-block;"><div mc:edit="text_12"><a href="'.  $florenza  . '?id=' . $to . "&name=" . $ref_name . "&phone=" . $ref_phone . '" target="_blank" class="link-blue"style="color:#e85711; text-decoration:none;"><span class="link-blue"style="color:#e85711; text-decoration:none;">read more</span></a></div></td>
                                                                                                                     </tr>
                                                                                                                 </table>
                                                                                                             </th>
@@ -290,7 +293,7 @@ if (isset($_POST['submit'])) {
                                                                                                                     </td>
                                                                                                                 </tr>
                                                                                                                     <tr>
-                                                                                                                        <td style="font-family:\'Kreon\', Georgia, serif; font-size:14px; line-height:18px; text-align:center; padding:10px 30px; border-radius:20px; background:transparent; color:#e85711; border:1px solid #e85711; display: inline-block;"><div mc:edit="text_12"><a href="'.  $olympia  . '?id=' . $to . "&name=" . $ref_name . "&phone" . $ref_phone . '" target="_blank" class="link-blue"style="color:#e85711; text-decoration:none;"><span class="link-blue"style="color:#e85711; text-decoration:none;">read more</span></a></div></td>
+                                                                                                                        <td style="font-family:\'Kreon\', Georgia, serif; font-size:14px; line-height:18px; text-align:center; padding:10px 30px; border-radius:20px; background:transparent; color:#e85711; border:1px solid #e85711; display: inline-block;"><div mc:edit="text_12"><a href="'.  $olympia  . '?id=' . $to . "&name=" . $ref_name . "&phone=" . $ref_phone . '" target="_blank" class="link-blue"style="color:#e85711; text-decoration:none;"><span class="link-blue"style="color:#e85711; text-decoration:none;">read more</span></a></div></td>
                                                                                                                     </tr>
                                                                                                                 </table>
                                                                                                             </th>
@@ -347,7 +350,7 @@ if (isset($_POST['submit'])) {
                                                                                                                         </td>
                                                                                                                     </tr>
                                                                                                                     <tr>
-                                                                                                                        <td style="font-family:\'Kreon\', Georgia, serif; font-size:14px; line-height:18px; text-align:center; padding:10px 30px; border-radius:20px; background:transparent; color:#e85711; border:1px solid #e85711; display: inline-block;"><div mc:edit="text_12"><a href="'.  $sanskriti  . '?id=' . $to . "&name=" . $ref_name . "&phone" . $ref_phone . '" target="_blank" class="link-blue"style="color:#e85711; text-decoration:none;"><span class="link-blue"style="color:#e85711; text-decoration:none;">read more</span></a></div></td>
+                                                                                                                        <td style="font-family:\'Kreon\', Georgia, serif; font-size:14px; line-height:18px; text-align:center; padding:10px 30px; border-radius:20px; background:transparent; color:#e85711; border:1px solid #e85711; display: inline-block;"><div mc:edit="text_12"><a href="'.  $sanskriti  . '?id=' . $to . "&name=" . $ref_name . "&phone=" . $ref_phone . '" target="_blank" class="link-blue"style="color:#e85711; text-decoration:none;"><span class="link-blue"style="color:#e85711; text-decoration:none;">read more</span></a></div></td>
                                                                                                                     </tr>
                                                                                                                 </table>
                                                                                                             </th>
