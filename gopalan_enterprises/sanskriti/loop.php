@@ -4,18 +4,18 @@
 //$arr = ['webdesigner@gopalanenterprises.com', 'seo@gopalanenterprises.com', 'cw@gopalanenterprises.com'];
 if (isset($_POST['submit'])) {
     // from 
-    $from_name      = "rohit";
-    $from_email     = "webdesigner@gopalanenterprise.com";
+    $from_name      = "Gopalan Enterprises";
+    $from_email     = "marketing@gopalanenterprise.com";
 
     // server where stored images
     $base_url       = "https://www.gopalanenterprises.com/bulk_email/sanskriti/";
 
     // landing page urls for redirect
-    $aqua           = "https://www.gopalanenterprises.com/index.html";
-    $lakefront      = "https://www.gopalanenterprises.com/index.html";
-    $florenza       = "https://www.gopalanenterprises.com/index.html";
-    $olympia        = "https://www.gopalanenterprises.com/index.html";
-    $sanskriti      = "https://www.gopalanenterprises.com/index.html";
+    // $aqua           = "https://www.gopalanenterprises.com/index.html";
+    // $lakefront      = "https://www.gopalanenterprises.com/index.html";
+    // $florenza       = "https://www.gopalanenterprises.com/index.html";
+    // $olympia        = "https://www.gopalanenterprises.com/index.html";
+    $sanskriti      = "https://www.gopalanenterprises.com/bulk_email/sanskriti/luxury_apartments_in_off_mysore_road_sanskriti_clients/index.html";
 
     /*
         convert exel to json url 
