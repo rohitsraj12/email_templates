@@ -17,6 +17,26 @@ if (isset($_POST['submit'])) {
     $olympia        = "https://www.gopalanenterprises.com/bulk_email/referal/ready_to_move_flats_in_kumbalgodu/index.php";
     $sanskriti      = "https://www.gopalanenterprises.com/bulk_email/referal/luxury_apartments_in_off_mysore_road/index.php";
 
+    // aqua details
+    $aqua_details   = "Located in Whitefield, Gopalan Aqua is a perfect mix of lush green landscapes along with a comfortable and stylish stay. With top IT companies and the metro station in the vicinity, these 2 BHK and 3 BHK homes boasts of all the amenities that are required for a modern lifestyle."; 
+    $aqua_price     = "Homes starting at Rs. 91.36 Lacs";
+
+    // lakefront 
+    $lfront_details = "Located in Electronic City- Phase 1, these well-designed 2BHK and 3BHK homes offer a premium living, superior finishes with various amenities. Well-connected to the metro station, hospitals, and IT companies, Gopalan Lakefront gives you luxurious spaces with facilities that simplify your life."; 
+    $lfront_price   = "Homes starting at Rs. 79.40 Lacs";
+    
+    //florenza
+    $florenza_details = "Located in Banashankari, 6th Stage, Gopalan Florenza draws inspiration from the culture of Renaissance Italy. With ideal connectivity and top- class amenities, these 2BHK and 3BHK homes cater to the different lifestyle needs of different residents.";
+    $florenza_price  = "Homes starting at 76.87 Lacs";
+    
+    //olympia
+    $olympia_details = "Located in Kumbalgodu, Off Mysore Road, Gopalan Olympia offers 2BHK and 3BHK premium homes perfect for a healthy lifestyle. With a 70,000 sq.ft clubhouse, bowling alley, mini theater, swimming pool and a lot more, this place can make your home an eternal bliss.";
+    $olympia_price  = "Homes starting at 53 Lacs";
+    
+    //sanskriti
+    $sanskriti_details = "Located in Mylasandra, Off Mysore Road, Gopalan Sanskriti offers 2 & 3 BHK homes that are a perfect combination of luxury and comfort. With a well-equipped clubhouse and vast open spaces, these stunning homes take care of your needs and give you the comfort you deserve.";
+    $sanskriti_price = "Homes starting at 73.79 Lacs";   
+
     /*
         convert exel to json url 
             https://beautifytools.com/excel-to-json-converter.php 
@@ -154,11 +174,13 @@ if (isset($_POST['submit'])) {
                                                                                                                         <td style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:18px; text-align:left; padding-bottom:15px; text-transform:uppercase; font-weight:bold; color:#000000;"><div mc:edit="text_10">Gopalan Aqua</div></td>
                                                                                                                     </tr>
                                                                                                                     <tr>
-                                                                                                                        <td class="text black"style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:22px; text-align:left; color:#000000; padding-bottom: 20px;"><div mc:edit="text_11">Located in Whitefield, Gopalan Aqua is a perfect mix of lush green landscapes along with a comfortable and stylish stay. With top IT companies
-                                                                                                                        and the metro station in the vicinity, these 2 BHK and 3 BHK homes boasts of all the amenities that are required for a modern lifestyle.</div>
-                                                                                                                        <h6 style="padding-top: 10px">
-                                                                                                                            Homes starting at Rs. 91.36 Lacs
-                                                                                                                        </h6>
+                                                                                                                        <td class="text black"style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:22px; text-align:left; color:#000000; padding-bottom: 20px;">
+                                                                                                                            <div mc:edit="text_11">
+                                                                                                                                ' . $aqua_details . '    
+                                                                                                                            </div>
+                                                                                                                            <h6 style="padding-top: 10px">
+                                                                                                                                ' . $aqua_price . ' 
+                                                                                                                            </h6>
                                                                                                                         </td>
                                                                                                                     </tr>
                                                                                                                     <tr>
@@ -190,7 +212,15 @@ if (isset($_POST['submit'])) {
                                                                                                                         <td style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:18px; text-align:left; padding-bottom:15px; text-transform:uppercase; font-weight:bold; color:#000000;"><div mc:edit="text_10">Gopalan Lakefront</div></td>
                                                                                                                     </tr>
                                                                                                                     <tr>
-                                                                                                                        <td class="text black"style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:22px; text-align:left; color:#000000; padding-bottom: 20px;"><div mc:edit="text_11">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo dolore setr tempore alipsinung.</div></td>
+                                                                                                                        <td class="text black"style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:22px; text-align:left; color:#000000; padding-bottom: 20px;">
+                                                                                                                            <div mc:edit="text_11">
+                                                                                                                                ' . $lfront_details . '
+                                                                                                                            </div>
+                                                                                                                            <h6 style="padding-top: 10px">
+                                                                                                                                ' . $lfront_price . '
+                                                                                                                            </h6>
+                                                                                                                            
+                                                                                                                        </td>
                                                                                                                     </tr>
                                                                                                                     <tr>
                                                                                                                         <td style="font-family:\'Kreon\', Georgia, serif; font-size:14px; line-height:18px; text-align:center; padding:10px 30px; border-radius:20px; background:transparent; color:#e85711; border:1px solid #e85711; display: inline-block;"><div mc:edit="text_12"><a href="'.  $lakefront  . '?id=' . $to . "&name=" . $ref_name . "&phone=" . $ref_phone . '" target="_blank" class="link-blue"style="color:#e85711; text-decoration:none;"><span class="link-blue"style="color:#e85711; text-decoration:none;">read more</span></a></div></td>
@@ -242,11 +272,13 @@ if (isset($_POST['submit'])) {
                                                                                                                         <td style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:18px; text-align:left; padding-bottom:15px; text-transform:uppercase; font-weight:bold; color:#000000;"><div mc:edit="text_10">Gopalan Florenza</div></td>
                                                                                                                     </tr>
                                                                                                                     <tr>
-                                                                                                                        <td class="text black"style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:22px; text-align:left; color:#000000; padding-bottom: 20px;"><div mc:edit="text_11">Located in Banashankari, 6th Stage, Gopalan Florenza draws inspiration from the culture of Renaissance Italy. With ideal connectivity and top-
-                                                                                                                        class amenities, these 2BHK and 3BHK homes cater to the different lifestyle needs of different residents.</div>
-                                                                                                                        <h6 style="padding-top: 10px">
-                                                                                                                            Homes starting at 76.87 Lacs
-                                                                                                                        </h6>
+                                                                                                                        <td class="text black"style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:22px; text-align:left; color:#000000; padding-bottom: 20px;">
+                                                                                                                            <div mc:edit="text_11">
+                                                                                                                                ' . $florenza_details . '
+                                                                                                                            </div>
+                                                                                                                            <h6 style="padding-top: 10px">
+                                                                                                                                ' . $florenza_price . '
+                                                                                                                            </h6>
                                                                                                                             
                                                                                                                         </td>
                                                                                                                     </tr>
@@ -279,11 +311,13 @@ if (isset($_POST['submit'])) {
                                                                                                                         <td style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:18px; text-align:left; padding-bottom:15px; text-transform:uppercase; font-weight:bold; color:#000000;"><div mc:edit="text_10">Gopalan Olympia</div></td>
                                                                                                                     </tr>
                                                                                                                     <tr>
-                                                                                                                        <td class="text black"style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:22px; text-align:left; color:#000000; padding-bottom: 20px;"><div mc:edit="text_11">Located in Kumbalgodu, Off Mysore Road, Gopalan Olympia offers 2BHK and 3BHK premium homes perfect for a healthy lifestyle. With a 70,000
-                                                                                                                        sq.ft clubhouse, bowling alley, mini theater, swimming pool and a lot more, this place can make your home an eternal bliss.</div>
-                                                                                                                        <h6 style="padding-top: 10px">
-                                                                                                                            Homes starting at 53 Lacs
-                                                                                                                        </h6>
+                                                                                                                        <td class="text black"style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:22px; text-align:left; color:#000000; padding-bottom: 20px;">
+                                                                                                                            <div mc:edit="text_11">
+                                                                                                                                ' . $olympia_details . '
+                                                                                                                            </div>
+                                                                                                                            <h6 style="padding-top: 10px">
+                                                                                                                                ' . $olympia_price . '
+                                                                                                                            </h6>
                                                                                                                         </td>
                                                                                                                     </tr>
                                                                                                                     <tr>
@@ -336,11 +370,13 @@ if (isset($_POST['submit'])) {
                                                                                                                         <td style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:18px; text-align:left; padding-bottom:15px; text-transform:uppercase; font-weight:bold; color:#000000;"><div mc:edit="text_10">Gopalan Sanskriti</div></td>
                                                                                                                     </tr>
                                                                                                                     <tr>
-                                                                                                                        <td class="text black"style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:22px; text-align:left; color:#000000; padding-bottom: 20px;"><div mc:edit="text_11">Located in Mylasandra, Off Mysore Road, Gopalan Sanskriti offers 2 &amp; 3 BHK homes that are a perfect combination of luxury and comfort. With a
-                                                                                                                        well-equipped clubhouse and vast open spaces, these stunning homes take care of your needs and give you the comfort you deserve.</div>
-                                                                                                                        <h6 style="padding-top: 10px">
-                                                                                                                            Homes starting at 73.79 Lacs
-                                                                                                                        </h6>
+                                                                                                                        <td class="text black"style="font-family:\'Raleway\', Arial,sans-serif; font-size:14px; line-height:22px; text-align:left; color:#000000; padding-bottom: 20px;">
+                                                                                                                            <div mc:edit="text_11">
+                                                                                                                                ' . $sanskriti_details . '
+                                                                                                                            </div>
+                                                                                                                            <h6 style="padding-top: 10px">
+                                                                                                                                ' . $sanskriti_price . '
+                                                                                                                            </h6>
                                                                                                                         </td>
                                                                                                                     </tr>
                                                                                                                     <tr>
